@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>报名后台</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section id="login" class="glass">
+      <div class="center">
+        <div class="icon">🔐</div>
+        <h1>报名后台</h1>
+        <p class="subtitle">请输入后台密码查看统计和名单。</p>
+      </div>
+      <div class="form">
+        <label for="password">后台密码</label>
+        <input id="password" type="password" placeholder="请输入后台密码" />
+        <p id="loginMessage" class="message hidden"></p>
+        <div class="actions">
+          <button id="loginButton" class="primary">进入后台</button>
+          <a class="button" href="/">返回首页</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="glass hidden">
+      <div class="admin-top">
+        <div>
+          <h1>报名后台</h1>
+          <p class="subtitle">显示人数、具体时间、名单和联系方式。</p>
+        </div>
+        <div class="admin-actions">
+          <button id="refreshButton">刷新</button>
+          <button id="clearButton" class="danger">清空记录</button>
+        </div>
+      </div>
+
+      <p id="adminMessage" class="message hidden"></p>
+
+      <div class="stats">
+        <div class="stat"><small>参加人数</small><b id="joinCount">0</b></div>
+        <div class="stat"><small>不参加人数</small><b id="noCount">0</b></div>
+        <div class="stat"><small>我在想想人数</small><b id="maybeCount">0</b></div>
+      </div>
+
+      <div id="lists"></div>
+
+      <div class="tiny-link"><a href="/">返回首页</a></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>游戏邀请</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section id="home" class="glass">
+      <div class="center">
+        <div class="icon">📖</div>
+        <h1>游戏邀请</h1>
+        <p class="subtitle">一场围绕📖内容展开的沉浸式游戏</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info"><small>游戏内容</small><strong>围绕📖内容</strong></div>
+        <div class="info"><small>游戏时间</small><strong>2026年7月12日 19:00（暂定）</strong></div>
+        <div class="info"><small>游戏时长</small><strong>约2个小时</strong></div>
+        <div class="info"><small>游戏详细内容</small><strong>在选择参加后展示</strong></div>
+      </div>
+
+      <div class="form">
+        <label for="name">请输入您的名字</label>
+        <input id="name" placeholder="可填写拼音缩写" autocomplete="name" />
+        <p id="homeMessage" class="message hidden"></p>
+        <div class="actions">
+          <button class="primary" data-choice="参加">参加</button>
+          <button data-choice="不参加">不参加</button>
+          <button data-choice="我在想想">我在想想</button>
+        </div>
+      </div>
+
+      <div class="tiny-link"><a href="/admin">后台入口</a></div>
+    </section>
+
+    <section id="contact" class="glass hidden">
+      <div class="center">
+        <div class="icon">💬</div>
+        <h2>我们稍后联系您</h2>
+        <p class="subtitle">请留下联系方式，方便后续确认。</p>
+      </div>
+
+      <div class="form">
+        <label for="contactName">您的名字</label>
+        <input id="contactName" placeholder="可填写拼音缩写" />
+      </div>
+      <div class="form">
+        <label for="contact">联系方式</label>
+        <input id="contact" placeholder="10-0000-0000" />
+        <p id="contactMessage" class="message hidden"></p>
+      </div>
+      <div class="actions">
+        <button id="submitContact" class="primary">提交联系方式</button>
+        <button id="backHome1">返回首页</button>
+      </div>
+    </section>
+
+    <section id="thanks" class="glass hidden">
+      <div class="center">
+        <div class="icon">🌙</div>
+        <h2>谢谢你，希望下次见到你。</h2>
+        <p class="subtitle">愿之后还有机会一起参与。</p>
+        <div class="actions" style="justify-content:center">
+          <button id="backHome2" class="primary">返回首页</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="done" class="glass hidden">
+      <div class="center">
+        <div class="icon">✅</div>
+        <h2>已收到</h2>
+        <p class="subtitle">我们稍后联系您。</p>
+        <div class="actions" style="justify-content:center">
+          <button id="backHome3" class="primary">返回首页</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
